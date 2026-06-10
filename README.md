@@ -74,3 +74,4 @@ See the submitted Google Document for:
 cd retail-store-sample-app/terraform/eks/default
 terraform output -json > ../../../../grading.json
 ```
+# Project Bedrock - Karatu 2025 Capstone
