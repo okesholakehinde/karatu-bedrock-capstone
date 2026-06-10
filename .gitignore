@@ -1,0 +1,9 @@
+# Terraform sensitive files
+terraform.tfvars
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Lambda build artifact
+lambda/*.zip
