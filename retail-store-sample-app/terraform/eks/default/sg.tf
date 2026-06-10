@@ -93,3 +93,22 @@ resource "aws_security_group" "checkout" {
 
   tags = module.tags.result
 }
+resource "aws_security_group_rule" "catalog_rds_from_eks" {
+  type                     = "ingress"
+  from_port                = 3306
+  to_port                  = 3306
+  protocol                 = "tcp"
+  security_group_id        = "sg-0252de721d51b41b8"
+  source_security_group_id = "sg-0df5b607ae4272466"
+  description              = "Allow EKS nodes to reach catalog RDS MySQL"
+}
+
+resource "aws_security_group_rule" "orders_rds_from_eks" {
+  type                     = "ingress"
+  from_port                = 5432
+  to_port                  = 5432
+  protocol                 = "tcp"
+  security_group_id        = "sg-0d564e7aa6af32b43"
+  source_security_group_id = "sg-0df5b607ae4272466"
+  description              = "Allow EKS nodes to reach orders RDS PostgreSQL"
+}

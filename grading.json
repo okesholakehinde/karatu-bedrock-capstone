@@ -1,0 +1,52 @@
+{
+  "assets_bucket_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "bedrock-assets-3356"
+  },
+  "cluster_endpoint": {
+    "sensitive": false,
+    "type": "string",
+    "value": "https://4B21205AD15FC8BD2B1FE516C5E6E74D.gr7.us-east-1.eks.amazonaws.com"
+  },
+  "cluster_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "project-bedrock-cluster"
+  },
+  "configure_kubectl": {
+    "sensitive": false,
+    "type": "string",
+    "value": "aws eks --region us-east-1 update-kubeconfig --name project-bedrock-cluster"
+  },
+  "dev_user_access_key_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "REDACTED-SEE-SUBMISSION-DOC"
+  },
+  "dev_user_console_password": {
+    "sensitive": true,
+    "type": "string",
+    "value": "REDACTED-SEE-SUBMISSION-DOC"
+  },
+  "dev_user_secret_access_key": {
+    "sensitive": true,
+    "type": "string",
+    "value": "REDACTED-SEE-SUBMISSION-DOC"
+  },
+  "region": {
+    "sensitive": false,
+    "type": "string",
+    "value": "us-east-1"
+  },
+  "retail_app_url": {
+    "sensitive": false,
+    "type": "string",
+    "value": "http://k8s-ui-ui-7a839dc07a-7669404696954dca.elb.us-east-1.amazonaws.com"
+  },
+  "vpc_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "vpc-027efb89c6e91ac90"
+  }
+}
