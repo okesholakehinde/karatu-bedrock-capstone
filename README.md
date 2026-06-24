@@ -76,3 +76,4 @@ terraform output -json > ../../../../grading.json
 ```
 # Project Bedrock - Karatu 2025 Capstone
 # tested
+## CI/CD Pipeline Demo
